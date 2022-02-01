@@ -1,399 +1,473 @@
+:root {
+  --primary-color: #f14d54;
+  --border-color: rgb(65, 65, 65);
+  --serchbar-bgcolor: #f4f4f4;
+  --search-button: #80bf32;
+  --cancel-button: #f14d54;
+}
+body {
+  margin: 0;
+  font: 14px Roboto;
+}
+//heading
+.headLine {
+  margin-top: 10px;
+  height: 92px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 100px 0 100px;
 
-:root{
-    --primary-color: #f14d54;
-    --border-color: rgb(65,65,65);
-    --serchbar-bgcolor : #F4F4F4;
-    --search-button: #80bf32;
-    --cancel-button:#f14d54;
-}
-body{
-    margin:0;
-    font: 14px "roboto";
-}
-//heading 
-.headLine{
-    
-    margin-top: 10px;
-    height: 92px;
+  .logo {
+    height: inherit;
+    img {
+      width: 100%;
+    }
+  }
+  .navlinks {
+    height: inherit;
+
     display: flex;
-    justify-content: space-between;
-    padding: 0 100px 0 100px;
-
-    .logo{
-        height: inherit;
-        img{
-            width: 100%;
-        }
-
+    align-items: center;
+    color: var(--primary-color);
+    .ma {
+      margin-right: 10px;
     }
-    .navlinks{
-        
-        height: inherit;
-        
-        display: flex;
-        align-items: center;
-        color: var(--primary-color);
-        .ma{
-            margin-right: 10px;
-        }
-        a{
-            text-decoration: none;
-            color: inherit;
-            
-        }
-        .nav-cart{
-            // border: 1px solid var(--border-color);
-            // border-radius: 3px;
-            width: 100.88px;
-            height: 2em;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            img{
-                height: 1em;
-            }
-            button{
-                border: 1px solid var(--border-color);
-                color:inherit;
-                width: 100.88px;
-                height: 2em;
-                background:none;
-                border-radius: 3px;
-                cursor: pointer;
-            }
-            .nav-cart-link{
-                color:black;
-            }
-        }
-        
+    a {
+      text-decoration: none;
+      color: inherit;
     }
+    .nav-cart {
+      // border: 1px solid var(--border-color);
+      // border-radius: 3px;
+      width: 100.88px;
+      height: 2em;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        height: 1em;
+      }
+      button {
+        border: 1px solid var(--border-color);
+        color: inherit;
+        width: 100.88px;
+        height: 2em;
+        background: none;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      .nav-cart-link {
+        color: black;
+      }
+    }
+  }
 }
 //this is search bar component
-.serchbar{
-    height: 80px;
-    background: var(--serchbar-bgcolor);
+.serchbar {
+  height: 80px;
+  background: var(--serchbar-bgcolor);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  
+
+  input {
+    height: 40px;
+    width: 422px;
+    border: 1px solid rgb(33, 33, 33);
+    border-radius: 4px;
+    margin-right: 10px;
+    padding: 10px;
+    color: rgb(33, 33, 33);
+  }
+  .search {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 50px;
-
-    input{
-        height:40px;
-        width: 422px;
-        border:1px solid rgb(33,33,33);
-        border-radius: 4px;
-        margin-right: 10px;
-        padding:10px;
-        
-    }
-    .search{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background:var(--search-button);
-        
-    }
-    .cancel{
-        background:var(--cancel-button);
-    }
-    button{
-        color:white;
-        font-size:16px;
-        margin-right: 10px;
-        height:40px;
-        width: 129px;
-        max-width: 129px;
-        border:none;
-        border-radius:5px;
-    }
+    background: var(--search-button);
+  }
+  .cancel {
+    background: var(--cancel-button);
+  }
+  button {
+    color: white;
+    font-size: 16px;
+    margin-right: 10px;
+    height: 40px;
+    width: 129px;
+    max-width: 129px;
+    border: none;
+    border-radius: 5px;
+  }
 }
 //this is bradcumm
-.login-bradcumm{
-    text-align:center;
-    font-weight:300;
-    font-size:20px;
-    margin-bottom: 50px;
-    span{
-        color: var(--primary-color);
-    }
+.login-bradcumm {
+  text-align: center;
+  font-weight: 300;
+  font-size: 20px;
+  margin-bottom: 50px;
+  span {
+    color: var(--primary-color);
+  }
 }
 //This is a register and login component
-.login-title{
-
-    text-align:center;
-    font-size:32px;
-    color: #414141;
-    font-weight:bold;
-    margin-bottom: 25px;
+.login-title {
+  text-align: center;
+  font-size: 32px;
+  color: #414141;
+  font-weight: bold;
+  margin-bottom: 25px;
 }
 
-.login-register-element{
+.login-register-element {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  padding: 0 100px 0 100px;
+  margin-bottom: 80px;
 
-    margin-top: 50px;
-    display:flex;
-    justify-content:center;
-    padding: 0 100px 0 100px;
-    margin-bottom:80px;
-
-    .hr{
-        height:1px;
-        background: rgba(65, 65, 65, 0.212);
-        margin-bottom: 20px;
+  .hr {
+    height: 1px;
+    background: rgba(65, 65, 65, 0.212);
+    margin-bottom: 20px;
+  }
+  .register-element {
+    width: 100%;
+    padding-right: 50px;
+    .register-element-title {
+      margin-bottom: 20px;
+      font-size: 20px;
+      color: #414141;
     }
-    .register-element{
-
-        width:100%;
-        padding-right: 50px;
-        .register-element-title{
-            margin-bottom: 20px;
-            font-size:20px;
-            color:#414141;
-        }
-        .register-element-slogan{
-            font:"Roboto-Light";
-            font-size:15px;
-            margin-bottom: 20px;
-            color:#838383;
-        }
-        .register-element-list{
-            font-size:15px;
-            font: Roboto;
-            margin-bottom: 165px;
-            color:#212121;
-            text-align:left;
-            ul{
-                
-                li{
-                    
-                    margin-bottom: 0;
-                    
-                }
-            }
-        }
-        .register-element-button{
-            button{
-
-            
-            width: 220px;
-            height: 45px;
-            background:#f14d54;
-            color: white;
-            border:none;
-                border-radius: 2px;
-
-            }
-        }
-
-        
+    .register-element-slogan {
+      font: "Roboto-Light";
+      font-size: 15px;
+      margin-bottom: 20px;
+      color: #838383;
     }
-    .login-element{
-        width:100%;
-        .login-element-title{
-            margin-bottom: 20px;
-            font-size:20px;
-            color:#414141;
+    .register-element-list {
+      font-size: 15px;
+      font: Roboto;
+      margin-bottom: 165px;
+      color: #212121;
+      text-align: left;
+      ul {
+        li {
+          margin-bottom: 0;
         }
-        .login-element-slogan{
-            font:"Roboto-Light";
-            font-size:15px;
-            margin-bottom: 20px;
-            color:#838383;
-        }
-        .email{
-            margin-bottom:40px;
-            display: flex;
-            flex-direction: column;
-            span{
-                margin-bottom:15px;
-            }
-            input
-            {
-                width: 400px;
-            }
-        }
-        .password{
-            display: flex;
-            flex-direction: column;
-            margin-bottom:60px;
-
-            span{
-                margin-bottom:15px;
-            }
-            input{
-                width: 400px;
-            }
-        }
-        .login-element-button{
-            button{
-                height:45px;
-                background:#f14d54;
-                color:white;
-                width:100px;
-                border:none;
-                border-radius: 2px;
-                margin-top: -6px;
-            }
-        }
+      }
     }
+    .register-element-button {
+      button {
+        width: 220px;
+        height: 45px;
+        background: #f14d54;
+        color: white;
+        border: none;
+        border-radius: 2px;
+      }
+    }
+  }
+  .login-element {
+    width: 100%;
+    .login-element-title {
+      margin-bottom: 20px;
+      font-size: 20px;
+      color: #414141;
+    }
+    .login-element-slogan {
+      font: "Roboto-Light";
+      font-size: 15px;
+      margin-bottom: 20px;
+      color: #838383;
+    }
+    .email {
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      span {
+        margin-bottom: 15px;
+      }
+      input {
+        width: 400px;
+      }
+    }
+    .password {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 60px;
+
+      span {
+        margin-bottom: 15px;
+      }
+      input {
+        width: 400px;
+      }
+    }
+    .login-element-button {
+      button {
+        height: 45px;
+        background: #f14d54;
+        color: white;
+        width: 100px;
+        border: none;
+        border-radius: 2px;
+        margin-top: -6px;
+      }
+    }
+  }
 }
-
-
-
-
-
 
 ////register page csse
-.register-main{
-    margin-top:50px;
-    padding: 0 100px 0 100px;
-    margin-bottom:80px;
+.register-main {
+  margin-top: 50px;
+  padding: 0 100px 0 100px;
+  margin-bottom: 80px;
 
-    .register-title{
-        font: Roboto;
-        font-size:20px;
-        text-align: left;
-        color:#414141;
-        margin-bottom:20px;
+  .register-title {
+    font: Roboto;
+    font-size: 20px;
+    text-align: left;
+    color: #414141;
+    margin-bottom: 20px;
+  }
+  .hr {
+    height: 1px;
+    background: rgba(65, 65, 65, 0.212);
+    margin-bottom: 20px;
+  }
+  .register-slogan {
+    font: Roboto-Light;
+    font-size: 15px;
+    color: #838383;
+    margin-bottom: 20px;
+  }
+  .register-names {
+    display: flex;
+    font: Roboto;
+    font-size: 15px;
+    color: #414141;
+
+    margin-bottom: 40px;
+
+    .fnm {
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      span {
+        margin-bottom: 15px;
+      }
+      input {
+        width: 375px;
+
+        height: 40px;
+      }
     }
-    .hr{
-        height:1px;
-        background: rgba(65, 65, 65, 0.212);
-        margin-bottom: 20px;
+    .lnm {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      span {
+        margin-bottom: 15px;
+      }
+      input {
+        width: 375px;
+
+        height: 40px;
+      }
     }
-    .register-slogan{
-        font: Roboto-Light;
-        font-size: 15px;
-        color: #838383;
-        margin-bottom:20px;
-    }
-    .register-names{
-        display: flex;
-        font: Roboto;
-        font-size: 15px;
-        color: #414141;
-
-        margin-bottom:40px;
-
-        .fnm{
-            width: 100%;
-            
-            display: flex;
-            flex-direction: column;
-            span{
-                margin-bottom: 15px;
-            }
-            input{
-                width: 375px;
-
-                height:40px;
-            }
-        }
-        .lnm{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            span{
-                margin-bottom: 15px;
-            }
-            input{
-                width: 375px;
-
-                height:40px;
-            }
-        }
-
-        
-    }
-    .register-email{
-        width:100%;
-        display: flex;
-        flex-direction: column;
-        font: Roboto;
-        font-size: 15px;
-        color: #414141;
-        margin-bottom: 70px;
-        span{
-            margin-bottom: 15px;
-        }
-        input{
-            height: 40px;
-        }
-    }
-
-    .register-loginifo-title{
-        font: Roboto;
-        font-size:20px;
-        text-align: left;
-        color:#414141;
-        margin-bottom:20px;
-
-    }
-    .register-loginifo{
-        display: flex;
-        font: Roboto;
-        font-size: 15px;
-        color: #414141;
-
-        margin-bottom:40px;
-
-        .pass{
-            width: 100%;
-            
-            display: flex;
-            flex-direction: column;
-            span{
-                margin-bottom: 15px;
-            }
-            input{
-                width: 375px;
-
-                height:40px;
-            }
-        }
-        .confPass{
-            width: 100%;
-            display: flex;
-            flex-direction: column;
-            span{
-                margin-bottom: 15px;
-            }
-            input{
-                width: 375px;
-
-                height:40px;
-            }
-        }
-
-        
-    }
-    button{
-        background: var(--primary-color);
-        color: white;
-        border:none;
-        height:45px;
-        width:136px;
-        border-radius:2px;
-    }
-
-}
-
-
-
-//footer here 
-
-.footer{
-    background:#F9F9F9;
+  }
+  .register-email {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    img{
-        margin-top:60px;
-        width:10%;
-        margin-bottom:30px;
+    font: Roboto;
+    font-size: 15px;
+    color: #414141;
+    margin-bottom: 70px;
+    span {
+      margin-bottom: 15px;
     }
-    span{
-        margin-bottom:50px;
-        font-size:14px;
-        color:#838383;
+    input {
+      height: 40px;
     }
+  }
+
+  .register-loginifo-title {
+    font: Roboto;
+    font-size: 20px;
+    text-align: left;
+    color: #414141;
+    margin-bottom: 20px;
+  }
+  .register-loginifo {
+    display: flex;
+    font: Roboto;
+    font-size: 15px;
+    color: #414141;
+
+    margin-bottom: 40px;
+
+    .pass {
+      width: 100%;
+
+      display: flex;
+      flex-direction: column;
+      span {
+        margin-bottom: 15px;
+      }
+      input {
+        width: 375px;
+
+        height: 40px;
+      }
+    }
+    .confPass {
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      span {
+        margin-bottom: 15px;
+      }
+      input {
+        width: 375px;
+
+        height: 40px;
+      }
+    }
+  }
+  button {
+    background: var(--primary-color);
+    color: white;
+    border: none;
+    height: 45px;
+    width: 136px;
+    border-radius: 2px;
+  }
+}
+
+//product page
+.product-title {
+  text-align: center;
+  font: Roboto;
+  font-size: 32px;
+  color: #414141;
+  margin-bottom: 25px;
+}
+
+.product-content {
+  margin-top: 45px;
+  padding: 0 100px 0 100px;
+  .serch-product-component {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 32px;
+    input {
+      margin-right: 10px;
+      width: 300px;
+      height: 40px;
+      padding: 10px;
+      color: rgb(65, 65, 65);
+    }
+    button {
+      //display: inline;
+      background: #f14d54;
+      color: white;
+      border: none;
+      //
+      height: 40px;
+      width: 101px;
+      border-radius: 2px;
+    }
+  }
+
+  .content-holder 
+  {
+    .content-titlebar-holder {
+      border-bottom: 1px solid #41414171;
+      .content-titlebar {
+        margin-left: 10px;
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+        margin-bottom: 20px;
+      }
+    }
+    .content-td-holder {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 64px;
+      border-bottom: 1px solid #41414171;
+      color: #212121;
+      font-size: 14px;
+      margin-bottom: 28px;
+      .content-td {
+        margin-left: 10px;
+        display: flex;
+        justify-content: space-between;
+        width: 60%;
+      }
+      .content-td-buttons {
+        display: flex;
+        justify-content: space-between;
+
+        .product-edit {
+          color: #80bf32;
+          background: none;
+          border: 1px solid #80bf32;
+          width: 80px;
+          height: 30px;
+          margin-right: 10px;
+          border-radius: 3px;
+        }
+        .product-delete {
+          color: var(--primary-color);
+          background: none;
+          border: 1px solid var(--primary-color);
+          width: 80px;
+          height: 30px;
+          border-radius: 3px;
+        }
+      }
+    }
+  }
+  .content-row-managebar{
+      display: flex;
+      justify-content: flex-end;
+      margin-bottom:80px;
+      a{
+          text-decoration: none;
+      }
+      .row-data-text{
+          margin-right: 10px;
+      }
+      .row-data-dropdown{
+          margin-right: 10px;
+      }
+      .page-number-data{
+          margin-right: 10px;
+      }
+  }
+}
+
+//footer here
+
+.footer {
+  background: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  img {
+    margin-top: 60px;
+    width: 10%;
+    margin-bottom: 30px;
+  }
+  span {
+    margin-bottom: 50px;
+    font-size: 14px;
+    color: #838383;
+  }
 }
