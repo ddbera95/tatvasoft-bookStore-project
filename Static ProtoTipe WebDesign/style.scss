@@ -1,0 +1,256 @@
+
+:root{
+    --primary-color: #f14d54;
+    --border-color: rgb(65,65,65);
+    --serchbar-bgcolor : #F4F4F4;
+    --search-button: #80bf32;
+    --cancel-button:#f14d54;
+}
+body{
+    margin:0;
+    font: 14px "roboto";
+}
+//heading 
+.headLine{
+    
+    margin-top: 10px;
+    height: 92px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 100px 0 100px;
+
+    .logo{
+        height: inherit;
+        img{
+            width: 100%;
+        }
+
+    }
+    .navlinks{
+        
+        height: inherit;
+        
+        display: flex;
+        align-items: center;
+        color: var(--primary-color);
+        .ma{
+            margin-right: 10px;
+        }
+        a{
+            text-decoration: none;
+            color: inherit;
+            
+        }
+        .nav-cart{
+            // border: 1px solid var(--border-color);
+            // border-radius: 3px;
+            width: 100.88px;
+            height: 2em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                height: 1em;
+            }
+            button{
+                border: 1px solid var(--border-color);
+                color:inherit;
+                width: 100.88px;
+                height: 2em;
+                background:none;
+                border-radius: 3px;
+                cursor: pointer;
+            }
+            .nav-cart-link{
+                color:black;
+            }
+        }
+        
+    }
+}
+//this is search bar component
+.serchbar{
+    height: 80px;
+    background: var(--serchbar-bgcolor);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 50px;
+
+    input{
+        height:40px;
+        width: 422px;
+        border:1px solid rgb(33,33,33);
+        border-radius: 4px;
+        margin-right: 10px;
+        padding:10px;
+        
+    }
+    .search{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background:var(--search-button);
+        
+    }
+    .cancel{
+        background:var(--cancel-button);
+    }
+    button{
+        color:white;
+        font-size:16px;
+        margin-right: 10px;
+        height:40px;
+        width: 129px;
+        max-width: 129px;
+        border:none;
+        border-radius:5px;
+    }
+}
+//this is bradcumm
+.login-bradcumm{
+    text-align:center;
+    font-weight:300;
+    font-size:20px;
+    margin-bottom: 50px;
+    span{
+        color: var(--primary-color);
+    }
+}
+//This is a register and login component
+.login-title{
+
+    text-align:center;
+    font-size:32px;
+    color: #414141;
+    font-weight:bold;
+    margin-bottom: 25px;
+}
+
+.login-register-element{
+
+    margin-top: 50px;
+    display:flex;
+    justify-content:center;
+    padding: 0 100px 0 100px;
+    margin-bottom:80px;
+
+    .hr{
+        height:1px;
+        background: rgba(65, 65, 65, 0.212);
+        margin-bottom: 20px;
+    }
+    .register-element{
+
+        width:100%;
+        padding-right: 50px;
+        .register-element-title{
+            margin-bottom: 20px;
+            font-size:20px;
+            color:#414141;
+        }
+        .register-element-slogan{
+            font:"Roboto-Light";
+            font-size:15px;
+            margin-bottom: 20px;
+            color:#838383;
+        }
+        .register-element-list{
+            font-size:15px;
+            font: Roboto;
+            margin-bottom: 165px;
+            color:#212121;
+            text-align:left;
+            ul{
+                
+                li{
+                    
+                    margin-bottom: 0;
+                    
+                }
+            }
+        }
+        .register-element-button{
+            button{
+
+            
+            width: 220px;
+            height: 45px;
+            background:#f14d54;
+            color: white;
+            border:none;
+                border-radius: 2px;
+
+            }
+        }
+
+        
+    }
+    .login-element{
+        width:100%;
+        .login-element-title{
+            margin-bottom: 20px;
+            font-size:20px;
+            color:#414141;
+        }
+        .login-element-slogan{
+            font:"Roboto-Light";
+            font-size:15px;
+            margin-bottom: 20px;
+            color:#838383;
+        }
+        .email{
+            margin-bottom:40px;
+            display: flex;
+            flex-direction: column;
+            span{
+                margin-bottom:15px;
+            }
+            input
+            {
+                width: 400px;
+            }
+        }
+        .password{
+            display: flex;
+            flex-direction: column;
+            margin-bottom:60px;
+
+            span{
+                margin-bottom:15px;
+            }
+            input{
+                width: 400px;
+            }
+        }
+        .login-element-button{
+            button{
+                height:45px;
+                background:#f14d54;
+                color:white;
+                width:100px;
+                border:none;
+                border-radius: 2px;
+                margin-top: -6px;
+            }
+        }
+    }
+}
+
+
+.footer{
+    background:#F9F9F9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img{
+        margin-top:60px;
+        width:10%;
+        margin-bottom:30px;
+    }
+    span{
+        margin-bottom:50px;
+        font-size:14px;
+        color:#838383;
+    }
+}
