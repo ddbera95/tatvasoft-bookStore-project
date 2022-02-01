@@ -238,6 +238,149 @@ body{
 }
 
 
+
+
+
+
+////register page csse
+.register-main{
+    margin-top:50px;
+    padding: 0 100px 0 100px;
+    margin-bottom:80px;
+
+    .register-title{
+        font: Roboto;
+        font-size:20px;
+        text-align: left;
+        color:#414141;
+        margin-bottom:20px;
+    }
+    .hr{
+        height:1px;
+        background: rgba(65, 65, 65, 0.212);
+        margin-bottom: 20px;
+    }
+    .register-slogan{
+        font: Roboto-Light;
+        font-size: 15px;
+        color: #838383;
+        margin-bottom:20px;
+    }
+    .register-names{
+        display: flex;
+        font: Roboto;
+        font-size: 15px;
+        color: #414141;
+
+        margin-bottom:40px;
+
+        .fnm{
+            width: 100%;
+            
+            display: flex;
+            flex-direction: column;
+            span{
+                margin-bottom: 15px;
+            }
+            input{
+                width: 375px;
+
+                height:40px;
+            }
+        }
+        .lnm{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            span{
+                margin-bottom: 15px;
+            }
+            input{
+                width: 375px;
+
+                height:40px;
+            }
+        }
+
+        
+    }
+    .register-email{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+        font: Roboto;
+        font-size: 15px;
+        color: #414141;
+        margin-bottom: 70px;
+        span{
+            margin-bottom: 15px;
+        }
+        input{
+            height: 40px;
+        }
+    }
+
+    .register-loginifo-title{
+        font: Roboto;
+        font-size:20px;
+        text-align: left;
+        color:#414141;
+        margin-bottom:20px;
+
+    }
+    .register-loginifo{
+        display: flex;
+        font: Roboto;
+        font-size: 15px;
+        color: #414141;
+
+        margin-bottom:40px;
+
+        .pass{
+            width: 100%;
+            
+            display: flex;
+            flex-direction: column;
+            span{
+                margin-bottom: 15px;
+            }
+            input{
+                width: 375px;
+
+                height:40px;
+            }
+        }
+        .confPass{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            span{
+                margin-bottom: 15px;
+            }
+            input{
+                width: 375px;
+
+                height:40px;
+            }
+        }
+
+        
+    }
+    button{
+        background: var(--primary-color);
+        color: white;
+        border:none;
+        height:45px;
+        width:136px;
+        border-radius:2px;
+    }
+
+}
+
+
+
+//footer here 
+
 .footer{
     background:#F9F9F9;
     display: flex;
