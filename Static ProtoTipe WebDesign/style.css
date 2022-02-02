@@ -674,6 +674,80 @@ body {
   padding: 10px;
 }
 
+.edit-product-title {
+  text-align: center;
+  font: 32px Roboto;
+  margin-bottom: 25px;
+}
+
+.edit-product-body {
+  margin-top: 50px;
+  padding: 0 100px 0 100px;
+}
+.edit-product-body .chil1 {
+  margin-right: 30px;
+}
+.edit-product-body .child1 {
+  display: flex;
+  margin-bottom: 35px;
+}
+.edit-product-body .child1 .name {
+  font: 15px Roboto;
+  color: #414141;
+  margin-bottom: 15px;
+}
+.edit-product-body .child1 .input input {
+  width: 357px;
+}
+.edit-product-body .child2 {
+  display: flex;
+  margin-bottom: 60px;
+}
+.edit-product-body .child2 .name {
+  font: 15px Roboto;
+  color: #414141;
+  margin-bottom: 15px;
+}
+.edit-product-body .child2 .input input {
+  width: 357px;
+}
+.edit-product-body .child3 {
+  width: 357px;
+  height: 40px;
+  border: 1px solid #838383;
+  border-radius: 3px;
+  margin-bottom: 35px;
+}
+.edit-product-body .child3 button {
+  width: 120px;
+  height: 39px;
+  border-radius: 3px 0 0 3px;
+  border: none;
+  background: var(--primary-color);
+  color: white;
+}
+.edit-product-body .child4 {
+  display: flex;
+  margin-bottom: 80px;
+}
+.edit-product-body .child4 div:first-child button {
+  color: white;
+  border: none;
+  background: #80bf32;
+  width: 100px;
+  height: 40px;
+  border-radius: 3px;
+  margin-right: 10px;
+}
+.edit-product-body .child4 div:last-child button {
+  color: white;
+  border: none;
+  background: #f14d54;
+  width: 100px;
+  height: 40px;
+  border-radius: 3px;
+}
+
 .footer {
   background: #f9f9f9;
   display: flex;

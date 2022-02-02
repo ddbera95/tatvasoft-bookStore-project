@@ -778,8 +778,100 @@ body {
 }
 
 
+//Edit Product
 
 
+.edit-product-title{
+  text-align: center;
+  font:32px Roboto;
+  margin-bottom:25px;
+}
+
+.edit-product-body{
+
+  margin-top:50px;
+  padding: 0 100px 0 100px;
+  .chil1{
+
+    margin-right: 30px;;
+  }
+  .child1{
+    display: flex;
+    margin-bottom: 35px;
+   
+
+    .name{
+      font:15px Roboto;
+      color:#414141;
+      margin-bottom: 15px;
+    }
+    .input{
+      
+      input{
+        width: 357px;
+      }
+    }
+  }
+  .child2{
+    display: flex;
+   margin-bottom: 60px;
+
+   
+    .name{
+      font:15px Roboto;
+      color:#414141;
+      margin-bottom: 15px;
+    }
+    .input{
+      
+      input{
+        width: 357px;
+      }
+    }
+  }
+  .child3{
+    width:357px;
+    height: 40px;
+    border: 1px solid #838383;
+    border-radius:3px;
+    margin-bottom: 35px;
+    button{
+      width:120px;
+      height:39px;
+      border-radius: 3px 0 0 3px;
+      border:none;
+      background:var(--primary-color);
+      color: white;
+    }
+  }
+  .child4{
+    display: flex;
+    margin-bottom: 80px;
+    div:first-child{
+        button{
+          color:white;
+          border:none;
+          background:#80bf32;
+          width:100px;
+          height: 40px;
+          border-radius: 3px;
+          margin-right: 10px;
+        }
+    }
+    div:last-child{
+      button{
+        color:white;
+        border:none;
+        background:#f14d54;
+        width:100px;
+        height: 40px;
+        border-radius: 3px;
+      }
+  }
+  }
+
+
+}
 
 
 
