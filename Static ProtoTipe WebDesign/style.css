@@ -655,6 +655,25 @@ body {
   text-align: center;
 }
 
+.serchbar-input-container {
+  display: flex;
+  flex-direction: column;
+}
+.serchbar-input-container .serchbar-input {
+  position: relative;
+}
+.serchbar-input-container .serchbar-suggestions {
+  background: white;
+  width: 422px;
+  max-height: 338px;
+  position: absolute;
+  margin-top: 40px;
+  border-radius: 5px;
+  border: 1px solid #8383838a;
+  overflow-y: auto;
+  padding: 10px;
+}
+
 .footer {
   background: #f9f9f9;
   display: flex;

@@ -752,6 +752,30 @@ body {
 }
 
 
+//serachbar box 
+
+.serchbar-input-container{
+
+  display: flex;
+  flex-direction: column;
+  .serchbar-input{
+    position: relative;
+  }
+  .serchbar-suggestions{
+    
+    //display: none;
+    background:white;
+    width: 422px;;
+    max-height: 338px;
+    position: absolute;
+    margin-top:40px;
+    border-radius: 5px;
+    border: 1px solid #8383838a;
+    overflow-y: auto;
+    padding: 10px;
+    //top: 0;
+  }
+}
 
 
 
